@@ -216,8 +216,6 @@ with tab2:
             api_key = st.secrets["PERPLEXITY_API_KEY"]
         except:
             api_key = None
-
-    st.write("DEBUG API KEY:", api_key)
     refresh_btn = st.button("Refresh submissions")
     df = load_submissions()
 
